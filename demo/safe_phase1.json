@@ -1,0 +1,72 @@
+{
+  "schema_version": "dashboard.safe.v1",
+  "aggregate_source_kind": "synthetic_demo",
+  "row_count": 10,
+  "column_count": 3,
+  "modality_coverage": [
+    {
+      "modality": "ppg",
+      "status_counts": {
+        "column_absent": 0,
+        "payload_empty": 0,
+        "payload_malformed": 0,
+        "structure_present_no_samples": 0,
+        "samples_present": 10,
+        "not_evaluable": 0
+      }
+    },
+    {
+      "modality": "accelerometer",
+      "status_counts": {
+        "column_absent": 8,
+        "payload_empty": 1,
+        "payload_malformed": 0,
+        "structure_present_no_samples": 1,
+        "samples_present": 0,
+        "not_evaluable": 0
+      }
+    }
+  ],
+  "inconsistency_counts": {
+    "pending_upload": 2,
+    "empty_physiology": 1,
+    "chunk_mismatch": 0,
+    "invalid_json": 0,
+    "duration_not_evaluable": 1,
+    "duration_mismatch": 0
+  },
+  "columns": [
+    {
+      "name": "session_meta",
+      "kind": "ordinary",
+      "null_or_empty_count": 0,
+      "non_empty_count": 10
+    },
+    {
+      "name": "raw_packets_json",
+      "kind": "json_like",
+      "null_or_empty_count": 0,
+      "non_empty_count": 10
+    },
+    {
+      "name": "normalized_fields",
+      "kind": "ordinary",
+      "null_or_empty_count": 3,
+      "non_empty_count": 7
+    }
+  ],
+  "upload_completion_count": 8,
+  "upload_pending_count": 2,
+  "privacy_posture": [
+    "no_raw_values",
+    "no_identifiers",
+    "no_exact_timestamps",
+    "input_path_redacted",
+    "no_physiological_claims",
+    "candidate_not_validated_ppg",
+    "no_default_vitals",
+    "benchmark_isolated",
+    "no_per_pair_channel_values",
+    "dashboard_safe_aggregates_only"
+  ]
+}

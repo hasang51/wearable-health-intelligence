@@ -1,0 +1,96 @@
+{
+  "schema_version": "dashboard.safe.v1",
+  "aggregate_source_kind": "synthetic_demo",
+  "top_layout": "INTERLEAVED_PACKET_LOCAL",
+  "top_hypothesis": "H_2block_meta_per_ch:last_of_block",
+  "hypothesis_scores": [
+    {
+      "hypothesis_id": "H_2block_meta_per_ch:last_of_block",
+      "band_ratio": 0.126,
+      "usable_fraction": 0.473,
+      "frequency_cv": 0.155
+    },
+    {
+      "hypothesis_id": "H_2x33",
+      "band_ratio": 0.1148,
+      "usable_fraction": 0.243,
+      "frequency_cv": 0.751
+    },
+    {
+      "hypothesis_id": "H_2x32_plus_2global",
+      "band_ratio": 0.1139,
+      "usable_fraction": 0.23,
+      "frequency_cv": 0.746
+    },
+    {
+      "hypothesis_id": "H_3x22",
+      "band_ratio": 0.0804,
+      "usable_fraction": 0.054,
+      "frequency_cv": 0.862
+    }
+  ],
+  "quality_label_counts": {
+    "unusable": 272,
+    "poor": 16696,
+    "uncertain": 7160,
+    "plausible_candidate_signal": 1108
+  },
+  "continuous_segment_count": 37,
+  "channel_segment_count": 74,
+  "periodicity": {
+    "plausible": 35,
+    "weak": 17,
+    "non_evaluable": 22
+  },
+  "candidate_mean_periodic_frequency_hz": 1.95,
+  "candidate_frequency_note": "Mean candidate periodic frequency \u2014 not interpreted as a vital sign; research-only signal plausibility",
+  "channel_evidence": {
+    "verdict": "INSUFFICIENT_CHANNEL_AGREEMENT",
+    "frequency_agreeing": 18,
+    "frequency_evaluable": 37,
+    "frequency_agreement_fraction": 0.4864864864864865,
+    "median_zero_lag_correlation": -0.008,
+    "median_max_lagged_correlation": 0.205,
+    "median_coherence": 0.075,
+    "median_best_lag_samples": 12.0,
+    "passed_criteria": [],
+    "failed_criteria": [
+      "frequency_agreement_below_partial",
+      "median_lagged_correlation_below_partial",
+      "median_coherence_below_partial"
+    ],
+    "thresholds_used": {
+      "min_evaluable_pairs": 10,
+      "min_evaluable_fraction": 0.6,
+      "compatible_min_frequency_agreement": 0.7,
+      "compatible_min_median_lagged_correlation": 0.3,
+      "compatible_min_median_coherence": 0.2,
+      "partial_min_frequency_agreement": 0.5,
+      "partial_min_median_lagged_correlation": 0.25,
+      "partial_min_median_coherence": 0.1
+    }
+  },
+  "rate_status": "NOT_COMPUTED",
+  "failed_gates": [
+    "decoder_status_insufficient",
+    "public_median_abs_hr_error_gate",
+    "public_coverage_gate",
+    "rate_estimates_unavailable",
+    "channel_agreement_insufficient"
+  ],
+  "passed_gates": [],
+  "benchmark_ran": false,
+  "score_margin_note": "Best research candidate leads on band_ratio (0.1260 vs 0.1148) and usable_fraction (0.473 vs 0.243), with lower frequency_cv (0.155). Band-ratio margin is 0.0112. Decoder remains UNVERIFIED \u2014 best research candidate, not physiological PPG.",
+  "privacy_posture": [
+    "no_raw_values",
+    "no_identifiers",
+    "no_exact_timestamps",
+    "input_path_redacted",
+    "no_physiological_claims",
+    "candidate_not_validated_ppg",
+    "no_default_vitals",
+    "benchmark_isolated",
+    "no_per_pair_channel_values",
+    "dashboard_safe_aggregates_only"
+  ]
+}

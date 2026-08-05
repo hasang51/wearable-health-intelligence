@@ -1,0 +1,2 @@
+patient_name,protocol_number,device_mac,consent_image_bytes,session_duration_s,ppg_json,accelerometer_json,heart_rate_json,hrv_json,spo2_json,ecg_json,temperature_json,sleep_json,activity_json,blood_pressure_json,glucose_json,upload_meta_json
+SYNTH_PATIENT_ADA_LOVELACE,PROTO-SYNTH-9999,AA:BB:CC:DD:EE:FF,CONSENT_BYTES_SYNTH_DEADBEEF,,{not-json,{},"{""ok"": true}",totally-broken,,[],{},,[],,{},{}

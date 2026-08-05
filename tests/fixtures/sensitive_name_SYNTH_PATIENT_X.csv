@@ -1,0 +1,2 @@
+patient_name,protocol_number,device_mac,consent_image_bytes,ppg_json
+SYNTH_PATIENT_ADA_LOVELACE,PROTO-SYNTH-9999,AA:BB:CC:DD:EE:FF,CONSENT_BYTES_SYNTH_DEADBEEF,"{""samples"": [987654.321], ""time_ms"": [1000]}"

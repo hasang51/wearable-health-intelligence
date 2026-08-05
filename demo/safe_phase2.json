@@ -1,0 +1,84 @@
+{
+  "schema_version": "dashboard.safe.v1",
+  "aggregate_source_kind": "synthetic_demo",
+  "session_count": 10,
+  "packet_count": 8161,
+  "malformed_packet_count": 0,
+  "candidate_count": 192,
+  "nominal_payload_length": 66,
+  "datatype_mode": "119",
+  "decoder_status": "UNVERIFIED",
+  "top_decoder_family": "int24 | CAB | C2",
+  "total_gap_count": 27,
+  "max_gap_ms": 47111.0,
+  "gap_threshold_ms": 1500,
+  "packets_by_session": [
+    {
+      "session_ordinal": 1,
+      "packet_count": 820,
+      "gap_count": 3
+    },
+    {
+      "session_ordinal": 2,
+      "packet_count": 815,
+      "gap_count": 2
+    },
+    {
+      "session_ordinal": 3,
+      "packet_count": 812,
+      "gap_count": 4
+    },
+    {
+      "session_ordinal": 4,
+      "packet_count": 810,
+      "gap_count": 1
+    },
+    {
+      "session_ordinal": 5,
+      "packet_count": 818,
+      "gap_count": 3
+    },
+    {
+      "session_ordinal": 6,
+      "packet_count": 822,
+      "gap_count": 2
+    },
+    {
+      "session_ordinal": 7,
+      "packet_count": 805,
+      "gap_count": 5
+    },
+    {
+      "session_ordinal": 8,
+      "packet_count": 830,
+      "gap_count": 2
+    },
+    {
+      "session_ordinal": 9,
+      "packet_count": 814,
+      "gap_count": 3
+    },
+    {
+      "session_ordinal": 10,
+      "packet_count": 815,
+      "gap_count": 2
+    }
+  ],
+  "packet_interval_summary": {
+    "delta_min_ms": 48.0,
+    "delta_median_ms": 52.0,
+    "delta_p95_ms": 120.0
+  },
+  "privacy_posture": [
+    "no_raw_values",
+    "no_identifiers",
+    "no_exact_timestamps",
+    "input_path_redacted",
+    "no_physiological_claims",
+    "candidate_not_validated_ppg",
+    "no_default_vitals",
+    "benchmark_isolated",
+    "no_per_pair_channel_values",
+    "dashboard_safe_aggregates_only"
+  ]
+}

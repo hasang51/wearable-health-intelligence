@@ -1,0 +1,2 @@
+patient_name,protocol_number,device_mac,consent_image_bytes,chunks_sent,chunks_total,chunks_failed,upload_pending,ppg_json
+SYNTH_PATIENT_ADA_LOVELACE,PROTO-SYNTH-9999,AA:BB:CC:DD:EE:FF,CONSENT_BYTES_SYNTH_DEADBEEF,8,10,3,1,"{""samples"": [1.0, 2.0]}"

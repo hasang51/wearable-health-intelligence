@@ -1,0 +1,74 @@
+# Sensitive / private data — never commit
+data/raw/**
+data/private/**
+reports/private/**
+*.csv
+*.parquet
+*.db
+*.sqlite
+.env*
+secrets/**
+
+# Real safe bundles / delivery artifacts derived from reviewed real data.
+# These are aggregate "safe" outputs, not raw data, but they are generated
+# from a real dataset and must stay local — never shared in this repository.
+reports/delivery/**
+!reports/delivery/.gitkeep
+
+# Allow synthetic test fixtures and bundled synthetic demo assets only
+!tests/fixtures/
+!tests/fixtures/**/*.csv
+!demo/
+!demo/**/*.json
+!demo/**/*.md
+
+# Keep report directory structure (empty placeholders only)
+!reports/private/
+!reports/private/.gitkeep
+!reports/safe/
+!reports/safe/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# Test / coverage output
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
+# Logs
+*.log
+logs/
+
+# Streamlit secrets (never commit; local only)
+.streamlit/secrets.toml
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini

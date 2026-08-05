@@ -1,0 +1,20 @@
+﻿# Sensitive / private data — never index
+data/raw/**
+data/private/**
+reports/private/**
+*.csv
+*.parquet
+*.db
+*.sqlite
+.env*
+secrets/**
+
+# Allow synthetic test fixtures only
+!tests/fixtures/
+!tests/fixtures/**/*.csv
+
+# Keep report directory placeholders visible
+!reports/private/
+!reports/private/.gitkeep
+!reports/safe/
+!reports/safe/.gitkeep

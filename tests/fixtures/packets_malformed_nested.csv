@@ -1,0 +1,2 @@
+patient_name,protocol_number,device_mac,consent_image_bytes,raw_packets_json
+SYNTH_PATIENT_ADA_LOVELACE,PROTO-SYNTH-9999,AA:BB:CC:DD:EE:FF,CONSENT_BYTES_SYNTH_DEADBEEF,"[{""dataEnd"": true, ""dataType"": ""119"", ""dicData"": {""PPG"": ""{not-json"", ""Time"": 1700000000000}, ""receivedAtMs"": 1700000000000}, {""dataEnd"": true, ""dataType"": ""119"", ""dicData"": {""PPG"": [""x"", ""y""], ""Time"": 1700000000000}, ""receivedAtMs"": 1700000001000}]"
